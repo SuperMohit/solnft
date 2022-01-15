@@ -168,22 +168,22 @@ const Home = (props: HomeProps) => {
   return (
     <main>
       {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+        <p style={{backgroundColor:"#323663", fontSize: "25px",textAlign: "center"}}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
+      
+      {wallet && <p className="mon3"><p className="conti"><p className="boxi"><p className="rr">{(balance || 0).toLocaleString()}</p> <br></br><p className="rr1">SOL</p> <br></br><p className="rr2">Balance</p></p></p></p>}
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
+      {wallet && <p className="mon"   ><p  className="conti"><p className="boxi"><p className="xx1">{itemsAvailable}</p> <br></br><p className="xx2"> Total Available </p></p></p></p>}
 
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
+      {wallet && <p  className="mon1"  ><p className="conti"><p className="boxi"><p className="xx1"> {itemsRedeemed}</p> <br></br><p className="xx2">Redeemed</p></p></p></p> }
 
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
-
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
+      {wallet && <p className="mon2"  ><p className="conti"><p className="boxi"><p className="xx1">{itemsRemaining}</p> <br></br><p className="xx2">Remaining</p></p></p></p> }
 
       <MintContainer>
         {!wallet ? (
           <ConnectButton>Connect Wallet</ConnectButton>
         ) : (
-          <MintButton
+          <MintButton style={{marginTop:"-400px", marginLeft:"700px"}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="contained"

@@ -2,8 +2,9 @@ import "./App.css";
 import { useMemo } from "react";
 
 import Home from "./Home";
+
 import Pross from "./Pross";
-import Cross from "./Cross";
+import Hat from "./Hat";
 import Dross from "./Dross";
 import Block1 from "./Block1";
 
@@ -25,6 +26,8 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+
+
 
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
@@ -100,10 +103,11 @@ const App = () => {
                 treasury={treasury}
                 txTimeout={txTimeout}
               />
-                <Pross></Pross>
-                <Cross></Cross>
-                <Dross></Dross>
-                <Block1></Block1>
+            <Pross></Pross>
+               <Hat></Hat>
+               <Dross></Dross>
+               <Block1></Block1>
+              
              
             </WalletDialogProvider>
           </WalletProvider>

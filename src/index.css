@@ -15,12 +15,62 @@ code {
 }
 .op{
   color: white;
-  text-align: center;
+ text-align: center;
+ margin-top: -100px;
 }
+ .best{
+   margin-top: -1700px;
+
+
+ }
+ .nb{
+   margin-top: -300px;
+ }
+ .mon3{
+   margin-left: -200px;
+ }
+ .mon{
+   margin-left: 400px;
+   margin-top:-700px;
+ }
+ .mon1{
+  margin-left: 730px;
+  margin-top:-400px;
+ }
+ .mon2{
+  margin-left: 1050px;
+  margin-top:-560px;
+ }
+ .xx1{
+   text-align: center;
+   font-size: 40px;
+   margin-top: 20px;
+ }
+ .xx2{
+   margin-top: -30px;
+   text-align: center;
+   font-size: 20px;
+ }
+.rr{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+.rr1{
+  margin-top: -90px;
+  margin-left: 70px;
+}
+.rr2{
+  text-align: center;
+  font-size: 20px;
+  margin-top: -0px;
+}
+
 .op9{
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .op2{
   height: 50px;
@@ -74,7 +124,28 @@ code {
   margin: 240px auto;
   margin-top: 0px;
 }
-
+.conti{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
+  margin-top: 0px;
+}
+.conti .boxi{
+ 
+  position: relative;
+ width: calc(200px - 30px);
+ height: calc(200px - 30px);
+ background: #323663 ;
+ float: left;
+ margin: 15px;
+ box-sizing: border-box;
+ overflow: hidden;
+ border-radius: 10px;
+ padding: 20px;
+ margin-left: 100px;
+ 
+}
 .container .box{
  
   position: relative;
@@ -143,4 +214,75 @@ code {
 .mm{
   
   margin-left: 110px;
+}
+.contain{
+  position: relative;
+  width: 900px;
+  height: 300px;
+  margin: 240px auto;
+  margin-top: 0px;
+  margin-left: -80px;
+}
+.contain .vox{
+ 
+  position: relative;
+ width: calc(200px - 30px);
+ height: calc(200px - 30px);
+ background: #323663 ;
+ float: left;
+ margin: 15px;
+ box-sizing: border-box;
+ overflow: hidden;
+ border-radius: 10px;
+ padding: 20px;
+ margin-left: 200px;
+ 
+}
+.contain .vox1{
+ 
+  position: relative;
+ width: calc(200px - 30px);
+ height: calc(200px - 30px);
+ background: #323663 ;
+ float: left;
+ margin: 15px;
+ box-sizing: border-box;
+ overflow: hidden;
+ border-radius: 10px;
+ padding: 20px;
+ margin-left: 550px;
+ margin-top: -525px;
+ 
+}
+.contain .vox2{
+ 
+  position: relative;
+ width: calc(200px - 30px);
+ height: calc(200px - 30px);
+ background: #323663 ;
+ float: left;
+ margin: 15px;
+ box-sizing: border-box;
+ overflow: hidden;
+ border-radius: 10px;
+ padding: 20px;
+ margin-left: 900px;
+ margin-top: -1065px;
+ 
+}
+.contain .vox3{
+ 
+  position: relative;
+ width: calc(200px - 30px);
+ height: calc(200px - 30px);
+ background: #323663 ;
+ float: left;
+ margin: 15px;
+ box-sizing: border-box;
+ overflow: hidden;
+ border-radius: 10px;
+ padding: 20px;
+ margin-left: 1200px;
+ margin-top: -1605px;
+ 
 }
