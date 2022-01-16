@@ -167,13 +167,13 @@ const Home = (props: HomeProps) => {
 
   return (
     <main>
-      {wallet && (
-        <p style={{backgroundColor:"#323663", fontSize: "25px",textAlign: "center"}}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+      
+      {wallet && (<p style={{backgroundColor:"#323663", fontSize: "25px",textAlign: "center"}}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
       
       {wallet && <p className="mon3"><p className="conti"><p className="boxi"><p className="rr">{(balance || 0).toLocaleString()}</p> <br></br><p className="rr1">SOL</p> <br></br><p className="rr2">Balance</p></p></p></p>}
 
-      {wallet && <p className="mon"   ><p  className="conti"><p className="boxi"><p className="xx1">{itemsAvailable}</p> <br></br><p className="xx2"> Total Available </p></p></p></p>}
+      {wallet && <p className="mon "   ><p  className="conti"><p className="boxi"><p className="xx1">{itemsAvailable}</p> <br></br><p className="xx2"> Total Available </p></p></p></p>}
 
       {wallet && <p  className="mon1"  ><p className="conti"><p className="boxi"><p className="xx1"> {itemsRedeemed}</p> <br></br><p className="xx2">Redeemed</p></p></p></p> }
 
@@ -181,9 +181,9 @@ const Home = (props: HomeProps) => {
 
       <MintContainer>
         {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
+          <ConnectButton style={{marginLeft:"1300px"}}>Connect Wallet</ConnectButton>
         ) : (
-          <MintButton style={{marginTop:"-400px", marginLeft:"700px"}}
+          <MintButton style={{marginTop:"0px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"23px", width:"210px",height:"60px"}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="contained"
@@ -194,7 +194,7 @@ const Home = (props: HomeProps) => {
               isMinting ? (
                 <CircularProgress />
               ) : (
-                "MINT"
+                <p style={{textAlign:"center",marginLeft:"50px"}}>MINT</p>
               )
             ) : (
               <Countdown

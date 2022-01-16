@@ -2,11 +2,15 @@ import "./App.css";
 import { useMemo } from "react";
 
 import Home from "./Home";
-
+import Red from "./Red";
+import Van from "./Van";
+import Ran from "./Ran";
+import Can from "./Can";
 import Pross from "./Pross";
 import Hat from "./Hat";
 import Dross from "./Dross";
 import Block1 from "./Block1";
+
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
@@ -95,6 +99,7 @@ const App = () => {
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletDialogProvider>
+          
               <Home
                 candyMachineId={candyMachineId}
                 config={config}
@@ -103,6 +108,11 @@ const App = () => {
                 treasury={treasury}
                 txTimeout={txTimeout}
               />
+                
+          <Red></Red>
+          <Van></Van>
+          <Ran></Ran>
+          <Can></Can>
             <Pross></Pross>
                <Hat></Hat>
                <Dross></Dross>
