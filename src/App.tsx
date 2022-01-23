@@ -2,14 +2,15 @@ import "./App.css";
 import { useMemo } from "react";
 
 import Home from "./Home";
-import Red from "./Red";
-import Van from "./Van";
-import Ran from "./Ran";
-import Can from "./Can";
-import Pross from "./Pross";
-import Hat from "./Hat";
-import Dross from "./Dross";
-import Block1 from "./Block1";
+import  Heading1 from "./Heading1";
+import  TopContent1 from "./TopContent1";
+import TopHeading from "./TopHeading";
+import TopParagraph from "./TopParagraph";
+import MiddleHeading from "./MiddleHeading";
+import MiddleContent from "./MiddleContent";
+import LastHeading from "./LastHeading";
+import LastContent from "./LastContent";
+
 
 
 import * as anchor from "@project-serum/anchor";
@@ -30,6 +31,8 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+
+
 
 
 
@@ -109,14 +112,16 @@ const App = () => {
                 txTimeout={txTimeout}
               />
                 
-          <Red></Red>
-          <Van></Van>
-          <Ran></Ran>
-          <Can></Can>
-            <Pross></Pross>
-               <Hat></Hat>
-               <Dross></Dross>
-               <Block1></Block1>
+          < Heading1></Heading1>
+          < TopContent1></TopContent1>
+          <TopHeading></TopHeading>
+         <TopParagraph></TopParagraph>
+            <MiddleHeading></MiddleHeading>
+          <MiddleContent></MiddleContent>
+               <LastHeading></LastHeading>
+        
+               <LastContent></LastContent>
+            
               
              
             </WalletDialogProvider>

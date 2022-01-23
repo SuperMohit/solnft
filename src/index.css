@@ -118,6 +118,11 @@ code {
   margin-top: 130px;
 
 }
+.ig{
+  font-size: 20px;
+  margin-top: 140px;
+  margin-left: 100px;
+}
 .li1{
   color: white;
   font-size: 18px;
@@ -244,3 +249,9 @@ code {
   margin-left: 110px;
 }
 
+.bv{
+  color: white;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 50px;
+}
