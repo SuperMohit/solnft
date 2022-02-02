@@ -20,7 +20,10 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "axios": "^0.25.0",
+    "bootstrap": "^5.1.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.1",
     "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -30,7 +33,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf hosting/files/* && cp -r build/static hosting/files/ ",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

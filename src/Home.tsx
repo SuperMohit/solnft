@@ -170,20 +170,26 @@ const Home = (props: HomeProps) => {
       
       {wallet && (<p style={{backgroundColor:"#323663", fontSize: "25px",textAlign: "center"}}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
+    {wallet && <img className="vc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7ko-BzDK8cDQcoiEA0AHQP11PYEv9tJnQg&usqp=CAUy"></img>}
       
       {wallet && <p className="mon3"><p className="conti"><p className="boxi"><p className="rr">{(balance || 0).toLocaleString()}</p> <br></br><p className="rr1">SOL</p> <br></br><p className="rr2">Balance</p></p></p></p>}
+     
 
       {wallet && <p className="mon "   ><p  className="conti"><p className="boxi"><p className="xx1">{itemsAvailable}</p> <br></br><p className="xx2"> Total Available </p></p></p></p>}
 
       {wallet && <p  className="mon1"  ><p className="conti"><p className="boxi"><p className="xx1"> {itemsRedeemed}</p> <br></br><p className="xx2">Redeemed</p></p></p></p> }
 
       {wallet && <p className="mon2"  ><p className="conti"><p className="boxi"><p className="xx1">{itemsRemaining}</p> <br></br><p className="xx2">Remaining</p></p></p></p> }
+    
 
+     
       <MintContainer>
+        {!wallet && <img style={{width:"1530px",height:"350px",marginTop:"0px",marginLeft:"-20px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9yv2dmdkNYaMUi9KE59N-XwX2b99piW-_A&usqp=CAU"></img>}
         {!wallet ? (
-          <ConnectButton style={{marginLeft:"1300px"}}>Connect Wallet</ConnectButton>
+          <ConnectButton style={{marginLeft:"1350px",marginTop:"-660px"}}>Connect Wallet</ConnectButton>
+        
         ) : (
-          <MintButton style={{marginTop:"0px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"23px", width:"210px",height:"60px"}}
+          <MintButton style={{marginTop:"300px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"23px", width:"210px",height:"60px"}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="contained"
@@ -207,7 +213,7 @@ const Home = (props: HomeProps) => {
           </MintButton>
         )}
       </MintContainer>
-
+    
       <Snackbar
         open={alertState.open}
         autoHideDuration={6000}

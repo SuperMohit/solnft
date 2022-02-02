@@ -16,7 +16,7 @@ code {
 .op{
   color: white;
  text-align: center;
- margin-top: 300px;
+ margin-top: 170px;
 }
  .best{
    margin-top: -1700px;
@@ -31,15 +31,21 @@ code {
  }
  .re{
  
-   height: 580px;
+   height: 200px;
    width:530px;
    margin-left: 80px;
-   margin-top: -800px;
+   margin-top: -500px;
    
  }
+ .vc{
+  height: 580px;
+  width:530px;
+  margin-left: 80px;
+  margin-top: 50px;
+ }
  .va{
-   margin-top: -570px;
-   margin-left: 670px;
+   margin-top: -550px;
+   margin-left: 680px;
  }
  .ra{
    margin-left: 670px;
@@ -50,23 +56,23 @@ code {
    font-size: 20px;
    margin-left: 670px;
  }
- .mon3{
-   margin-left: 600px;
-   margin-top: 270px;
- }
- .mon{
-   margin-left: 700px;
-   margin-top: -700px;
- }
- .mon1{
-   margin-left: 1000px;
-   margin-top: -500px;
- }
- .mon2{
-   margin-left: 1200px;
-   margin-top: -600px;
- }
 
+.mon3{
+  margin-top: -450px;
+  margin-left: 600px;
+}
+.mon{
+  margin-left: 700px;
+  margin-top: -600px;
+}
+.mon1{
+  margin-top: -800px;
+  margin-left: 800px;
+}
+.mon2{
+  margin-top: -800px;
+  margin-left: 800px;
+}
  
  .xx1{
    text-align: center;
@@ -254,4 +260,42 @@ code {
   font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-left: 50px;
+}
+.xx{
+  color:white;
+}
+.footer{
+  margin-top: 400px;
+}
+.vb{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.f-container{
+  background-color: #03037B  ;
+  padding-bottom: 4rem;
+}
+.footer{
+  width: 60%;
+  height: 40vh;
+  background-color: #03037B ;
+  color: white;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer-h{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4 rem;
+}
+.footer-h h2{
+  margin-bottom: 2rem;
+}
+.footer-h a{
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  margin-right: 10rem;
 }
