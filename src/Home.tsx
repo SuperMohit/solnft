@@ -18,6 +18,7 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
+import axios from "axios";
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -102,12 +103,15 @@ const Home = (props: HomeProps) => {
           false
         );
 
+
+
         if (!status?.err) {
           setAlertState({
             open: true,
             message: "Congratulations! Mint succeeded!",
             severity: "success",
           });
+
         } else {
           setAlertState({
             open: true,
@@ -180,16 +184,18 @@ const Home = (props: HomeProps) => {
       {wallet && <p  className="mon1"  ><p className="conti"><p className="boxi"><p className="xx1"> {itemsRedeemed}</p> <br></br><p className="xx2">Redeemed</p></p></p></p> }
 
       {wallet && <p className="mon2"  ><p className="conti"><p className="boxi"><p className="xx1">{itemsRemaining}</p> <br></br><p className="xx2">Remaining</p></p></p></p> }
+      {wallet && <h1 className="ld" >Description</h1>}
+      {wallet &&<p  className="ld1" >They love the night. When the stars come out and the planets and other stars<br></br>emerge to dance with the sun. They look up and it makes them all to come up and<br></br>appreciate the planet below them even more. They are grounded.They are beautiful.</p>}
     
 
      
       <MintContainer>
-        {!wallet && <img style={{width:"1530px",height:"350px",marginTop:"0px",marginLeft:"-20px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9yv2dmdkNYaMUi9KE59N-XwX2b99piW-_A&usqp=CAU"></img>}
+        {!wallet && <img style={{width:"1530px",height:"350px",marginTop:"0px",marginLeft:"-20px"}} src="https://pbs.twimg.com/profile_banners/1488260833738170371/1643683042/1500x500"></img>}
         {!wallet ? (
           <ConnectButton style={{marginLeft:"1350px",marginTop:"-660px"}}>Connect Wallet</ConnectButton>
         
         ) : (
-          <MintButton style={{marginTop:"300px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"23px", width:"210px",height:"60px"}}
+          <MintButton style={{marginTop:"50px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"23px", width:"210px",height:"60px"}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="contained"

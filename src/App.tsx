@@ -4,8 +4,7 @@ import { useMemo } from "react";
 import Home from "./Home";
 
 import  TopContent1 from "./TopContent1";
-import TopHeading from "./TopHeading";
-import TopParagraph from "./TopParagraph";
+
 import MiddleHeading from "./MiddleHeading";
 import MiddleContent from "./MiddleContent";
 import LastHeading from "./LastHeading";
@@ -116,8 +115,8 @@ const App = () => {
                 
       
           < TopContent1></TopContent1>
-          <TopHeading></TopHeading>
-         <TopParagraph></TopParagraph>
+          
+    
             <MiddleHeading></MiddleHeading>
           <MiddleContent></MiddleContent>
                <LastHeading></LastHeading>
