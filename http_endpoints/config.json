@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "route": "/nfts",
+        "http_method": "GET",
+        "function_name": "fetchAllNFTs",
+        "validation_method": "NO_VALIDATION",
+        "respond_result": true,
+        "fetch_custom_user_data": true,
+        "create_user_on_auth": true,
+        "disabled": false
+    }
+]

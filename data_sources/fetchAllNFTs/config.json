@@ -1,0 +1,10 @@
+{
+    "name": "fetchAllNFTs",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "solman",
+        "readPreference": "secondary",
+        "wireProtocolEnabled": true
+    },
+    "version": 1
+}
