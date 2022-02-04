@@ -195,7 +195,7 @@ const Home = (props: HomeProps) => {
           <ConnectButton style={{marginLeft:"1350px",marginTop:"-660px"}}>Connect Wallet</ConnectButton>
         
         ) : (
-          <MintButton style={{marginTop:"50px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"23px", width:"210px",height:"60px"}}
+          <MintButton style={{marginTop:"50px", marginLeft:"980px", backgroundColor:"#323663", color: "white",fontSize:"24px", width:"210px",height:"60px"}}
             disabled={isSoldOut || isMinting || !isActive}
             onClick={onMint}
             variant="contained"
