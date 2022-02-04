@@ -18,7 +18,6 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
-import axios from "axios";
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -190,7 +189,7 @@ const Home = (props: HomeProps) => {
 
      
       <MintContainer>
-        {!wallet && <img style={{width:"1530px",height:"350px",marginTop:"0px",marginLeft:"-20px"}} src="https://pbs.twimg.com/profile_banners/1488260833738170371/1643683042/1500x500"></img>}
+        {!wallet && <img style={{width:"1530px",height:"351px",marginTop:"0px",marginLeft:"-20px"}} src="https://pbs.twimg.com/profile_banners/1488260833738170371/1643683042/1500x500"></img>}
         {!wallet ? (
           <ConnectButton style={{marginLeft:"1350px",marginTop:"-660px"}}>Connect Wallet</ConnectButton>
         
