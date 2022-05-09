@@ -17,7 +17,7 @@ code {
 .op{
   color: white;
  text-align: center;
- margin-top: 570px;
+ margin-top: 470px;
 }
  .best{
    margin-top: -1700px;
@@ -308,4 +308,25 @@ code {
   text-decoration: none;
   margin-bottom: 0.5rem;
   margin-right: 10rem;
+}
+.row-map {
+  width: 100%;
+  text-align: center;
+}
+
+.block-map-text {
+  width: 50%;
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  background-image: url("https://saviour-nfts.s3.amazonaws.com/saviour.png");
+  color: #03037B;
+  height: 440px;
+}
+
+
+.block-map {
+  width: 50%;
+  display: inline-block;
+  color: #FFFFFF;
 }

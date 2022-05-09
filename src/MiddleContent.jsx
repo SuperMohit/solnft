@@ -9,12 +9,18 @@ const MiddleContent = ()=>{
     ]
     console.log(data);
     const [myArray]= useState(data);
+
+    function details(id) {
+        console.log("calling")
+        console.log(id);
+    }
+
     return(
         <>
         {
             myArray.map((curElm)=>{
-               return      <table>
-                <tr class="nb">
+               return  <table >
+            <tr class="nb" onClick={() => details(curElm.id)}>
                <td><img class="op2"  src ={curElm.url} alt="random" ></img></td>
                <td><h1 class="ki"style={{marginLeft:"10px"}} >{curElm.Firstline}</h1></td>
                <td><h2 className="li">{curElm.Seacondline}</h2></td>
@@ -27,17 +33,12 @@ const MiddleContent = ()=>{
                <td><img class="op2"  src ={curElm.url} alt="random" ></img></td>
                <td><h1 class="ki"style={{marginLeft:"10px"}} >{curElm.Firstline}</h1></td>
                <td><h2 className="li">{curElm.Seacondline}</h2></td>
-               
-               
-               
-
-             
            </tr>
            </table>
-
+                      
             })
         }
-        </>
+         </> 
     )
 }
 export default MiddleContent

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.css";
 import { useMemo } from "react";
 
 import Home from "./Home";
@@ -9,6 +9,7 @@ import MiddleHeading from "./MiddleHeading";
 import MiddleContent from "./MiddleContent";
 import LastHeading from "./LastHeading";
 import LastContent from "./LastContent";
+import MapComponent from "./Map";
 
 import Footer from "./Footer";
 
@@ -117,8 +118,9 @@ const App = () => {
           < TopContent1></TopContent1>
           
     
-            <MiddleHeading></MiddleHeading>
-          <MiddleContent></MiddleContent>
+             <MiddleHeading></MiddleHeading>
+             <MapComponent></MapComponent>
+              <MiddleContent></MiddleContent>
                <LastHeading></LastHeading>
         
                <LastContent></LastContent>

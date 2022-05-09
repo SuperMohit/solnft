@@ -173,7 +173,7 @@ const Home = (props: HomeProps) => {
       
       {wallet && (<p style={{backgroundColor:"#323663", fontSize: "25px",textAlign: "center"}}>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
       )}
-    {wallet && <img className="vc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7ko-BzDK8cDQcoiEA0AHQP11PYEv9tJnQg&usqp=CAUy"></img>}
+      {wallet && <img className="vc" src="https://saviour-nfts.s3.amazonaws.com/marijuana.png"></img>}
       
       {wallet && <p className="mon3"><p className="conti"><p className="boxi"><p className="rr">{(balance || 0).toLocaleString()}</p> <br></br><p className="rr1">&nbsp;&nbsp;</p> <br></br><p className="rr2">Balance</p></p></p></p>}
      
