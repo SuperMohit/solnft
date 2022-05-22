@@ -1,17 +1,7 @@
 import React, { useState } from "react";
 const LastContent = ()=>{
     const data =[
-        {
-            id:0,  url:"https://static8.depositphotos.com/1222912/909/i/950/depositphotos_9092062-stock-photo-fantasy-world.jpg" , Firstline:"Solana Mystery Box Items",  Seacondline:"Solana Mystery Box enables merging special items from", Thirdline:"Mystery Boxes with the most popular Solana NFTs",Fourthline:"0.2 Total Volume"
-        },{
-            id:1,   url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPg6iCN3ZOmEwbeh8b3biZ5Xrv2ZBc1ttmg&usqp=CAU" ,  Firstline:"Solana Mystery Box Items",   Seacondline:"Solana Mystery Box enables merging special items from", Thirdline:"Mystery Boxes with the most popular Solana NFTs",Fourthline:"0.2 Total Volume"
-        },{
-            id:2,   url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWXlnubEoPMqKRLI7OQU_dQZBWPeZePmvf8A&usqp=CAU" ,  Firstline:"Solana Mystery Box Items",   Seacondline:"Solana Mystery Box enables merging special items from", Thirdline:"Mystery Boxes with the most popular Solana NFTs",Fourthline:"0.2 Total Volume"
-        },{
-            id:3,   url:"https://static8.depositphotos.com/1222912/909/i/950/depositphotos_9092062-stock-photo-fantasy-world.jpg" ,  Firstline:"Solana Mystery Box Items",   Seacondline:"Solana Mystery Box enables merging special items from", Thirdline:"Mystery Boxes with the most popular Solana NFTs",Fourthline:"0.2 Total Volume"
-        },{
-            id:4,   url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWXlnubEoPMqKRLI7OQU_dQZBWPeZePmvf8A&usqp=CAU" ,  Firstline:"Solana Mystery Box Items",   Seacondline:"Solana Mystery Box enables merging special items from", Thirdline:"Mystery Boxes with the most popular Solana NFTs",Fourthline:"0.2 Total Volume"
-        }
+       
     ]
     console.log(data);
     const [myArray]= useState(data);

@@ -18,6 +18,7 @@ import {
   mintOneToken,
   shortenAddress,
 } from "./candy-machine";
+import TopParagraph from "./TopParagraph";
 
 const ConnectButton = styled(WalletDialogButton)``;
 
@@ -183,11 +184,10 @@ const Home = (props: HomeProps) => {
       {wallet && <p  className="mon1"  ><p className="conti"><p className="boxi"><p className="xx1"> {itemsRedeemed}</p> <br></br><p className="xx2">Redeemed</p></p></p></p> }
 
       {wallet && <p className="mon2"  ><p className="conti"><p className="boxi"><p className="xx1">{itemsRemaining}</p> <br></br><p className="xx2">Remaining</p></p></p></p> }
-      {wallet && <h1 className="ld" >Description</h1>}
-      {wallet &&<p  className="ld1" >They love the night. When the stars come out and the planets and other stars<br></br>emerge to dance with the sun. They look up and it makes them all to come up and<br></br>appreciate the planet below them even more. They are grounded.They are beautiful.</p>}
-    
-
-     
+      {wallet &&<><p  className="ld1" > Girl Child Education NFT is automatically generated using GDELT news reporting and AI. Do you want to make a meaningful societal contributions using digital Art?
+      Then start minting the NFT.Every purchase goes to NGOs in India
+     which are working towards education and empowerment of girl childs.Show your support.
+      </p></>}
       <MintContainer>
         {!wallet && <img style={{width:"1530px",height:"351px",marginTop:"0px",marginLeft:"-20px"}} src="https://pbs.twimg.com/profile_banners/1488260833738170371/1643683042/1500x500"></img>}
         {!wallet ? (

@@ -1,0 +1,19 @@
+p {
+    margin-left: 40%;
+    margin-top: -50%;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+img {
+    height: 110px;
+    width: 110px;
+    margin-left: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}

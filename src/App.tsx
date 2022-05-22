@@ -6,10 +6,10 @@ import Home from "./Home";
 import  TopContent1 from "./TopContent1";
 
 import MiddleHeading from "./MiddleHeading";
-import MiddleContent from "./MiddleContent";
 import LastHeading from "./LastHeading";
 import LastContent from "./LastContent";
 import MapComponent from "./Map";
+
 
 import Footer from "./Footer";
 
@@ -33,6 +33,7 @@ import {
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import NFT from "./cards";
 
 
 
@@ -118,14 +119,14 @@ const App = () => {
           < TopContent1></TopContent1>
           
     
-             <MiddleHeading></MiddleHeading>
-             <MapComponent></MapComponent>
-              <MiddleContent></MiddleContent>
-               <LastHeading></LastHeading>
+            <MiddleHeading></MiddleHeading>
+            <MapComponent></MapComponent>
         
-               <LastContent></LastContent>
-              
-               <Footer></Footer>
+            
+            <LastHeading></LastHeading>
+            <NFT></NFT>
+            <LastContent></LastContent>  
+            <Footer></Footer>
             
               
              
